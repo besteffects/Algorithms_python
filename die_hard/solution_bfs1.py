@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class DieHardProblem:
     """Class to represent the 3L and 5L jug problem."""
 
