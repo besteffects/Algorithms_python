@@ -1,0 +1,7 @@
+Tests to run on your Die Hard AI assignment:
+1. Check that AI actually calling your tools or tool with different actions one by one
+2. Check that you see that it can find both solutions 3,4 and 0,4
+3. Check that you see different paths taken in different runs
+4. Check that AI reacts when action is not doing what it is supposed to (fill_big results in 0,3, etc, mess with it)
+5. Check what happens when you ask AI to find the unreachable state ((1,1), (2,1), (1,2), (2,2), (1,3), (2,3), (1,4), (2,4))
+Bottom line - prove that there is intelligence behind the use of tools

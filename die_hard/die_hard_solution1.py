@@ -129,6 +129,7 @@ llm = ChatOllama(model="qwen2.5")  # Change model if needed
 
 def solve_die_hard():
     """Main function where AI interacts with the tools to solve the Die Hard problem."""
+    print("🧊🥤 Die Hard Water Jug Problem 🧊🥤")
     messages = [
         HumanMessage(
             content="Solve the Die Hard problem using the available tools."
