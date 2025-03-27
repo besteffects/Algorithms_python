@@ -141,6 +141,7 @@ def solve_die_hard():
             "You must stop when the big jug contains 4 liters of water."
             "Show human readable output for each tool action and the AI's decision."
             "Show exactly how you think in the output during task execution"
+            "Also, print out how much time it took ti find the solution, including each step"
         )
     ]
     while True:
