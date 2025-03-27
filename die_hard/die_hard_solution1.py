@@ -142,6 +142,8 @@ def solve_die_hard():
             "Show human readable output for each tool action and the AI's decision."
             "Show exactly how you think in the output during task execution"
             "Also, print out how much time it took ti find the solution, including each step"
+            "Let me know if you are calling tools from the tools dictionary in my file"
+            "In the end find unreachable states: ((1,1), (2,1), (1,2), (2,2), (1,3), (2,3), (1,4), (2,4))"
         )
     ]
     while True:
