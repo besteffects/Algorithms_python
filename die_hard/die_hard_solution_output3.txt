@@ -1,0 +1,74 @@
+🧊🥤 Die Hard Water Jug Problem 🧊🥤
+AI action: Sure! Let's solve the Die Hard problem using the available tools. The problem is to get 4 liters of water in the big jug starting with an empty small (3-liter) jug and a full big (5-liter) jug. Here are the actions we can take:
+
+1. Fill the small jug.
+2. Pour from the small jug into the big jug.
+3. Empty the small jug.
+4. Pour from the big jug into the small jug.
+5. Empty the big jug.
+
+We will maintain the following invariants:
+- The small jug must contain between 0 and 3 liters of water.
+- The big jug must contain between 0 and 5 liters of water, but it cannot contain exactly 4 liters of water at any point except the final step.
+
+Let's start by initializing the state and executing actions until we get 4 liters in the big jug:
+
+### Initial State:
+- Small Jug: 0L
+- Big Jug: 5L
+
+### Execution:
+
+1. **Step 1**: Fill the small jug.
+   - Small Jug: 3L
+   - Big Jug: 5L
+   - Time taken so far: 1 step (1 second)
+
+2. **Step 2**: Pour from the small jug into the big jug until either the small jug is empty or the big jug is full.
+   - Small Jug: 0L
+   - Big Jug: 3L
+   - Time taken so far: 2 steps (2 seconds)
+
+3. **Step 3**: Fill the small jug again.
+   - Small Jug: 3L
+   - Big Jug: 3L
+
+4. **Step 4**: Pour from the small jug into the big jug until either the small jug is empty or the big jug is full.
+   - Small Jug: 1L
+   - Big Jug: 5L
+   - Time taken so far: 4 steps (4 seconds)
+
+5. **Step 5**: Empty the big jug.
+   - Small Jug: 1L
+   - Big Jug: 0L
+
+6. **Step 6**: Pour from the small jug into the big jug.
+   - Small Jug: 0L
+   - Big Jug: 1L
+
+7. **Step 7**: Fill the small jug again.
+   - Small Jug: 3L
+   - Big Jug: 1L
+
+8. **Step 8**: Pour from the small jug into the big jug until either the small jug is empty or the big jug is full.
+   - Small Jug: 0L
+   - Big Jug: 4L
+
+### Final State:
+- Small Jug: 0L
+- Big Jug: 4L
+
+The solution took 8 steps, and the final state satisfies the condition that the big jug contains exactly 4 liters of water. Here is a summary of each step:
+
+1. Fill small jug: (Small = 3, Big = 5)
+2. Pour from small to big until full: (Small = 0, Big = 3)
+3. Fill small jug again: (Small = 3, Big = 3)
+4. Pour from small to big until full: (Small = 1, Big = 5)
+5. Empty big jug: (Small = 1, Big = 0)
+6. Pour from small to big: (Small = 0, Big = 1)
+7. Fill small jug again: (Small = 3, Big = 1)
+8. Pour from small to big until full: (Small = 0, Big = 4)
+
+The total time taken is 8 steps.
+
+### Time Taken: 8 seconds
