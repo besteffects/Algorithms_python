@@ -140,6 +140,7 @@ def solve_die_hard():
             "* Big jug must not contain 4 liters of water. "
             "You must stop when the big jug contains 4 liters of water."
             "Show human readable output for each tool action and the AI's decision."
+            "Show exactly how you think in the output during task execution"
         )
     ]
     while True:

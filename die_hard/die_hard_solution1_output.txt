@@ -89,13 +89,4 @@ Let's simulate these steps with human-readable output:
      ```
 
 Thus, the big jug now contains exactly 4 liters of water.
-die_hard_solution1.py:157: LangChainDeprecationWarning: The method `BaseTool.__call__` was deprecated in langchain-core 0.1.47 and will be removed in 1.0. Use invoke instead.
-  state_json = json.loads(get_state())
-Traceback (most recent call last):
-  File "die_hard_solution1.py", line 167, in <module>
-    solve_die_hard()
-  File "die_hard_solution1.py", line 157, in solve_die_hard
-    state_json = json.loads(get_state())
-  File "/home/vitalii/.local/lib/python3.8/site-packages/langchain_core/_api/deprecation.py", line 180, in warning_emitting_wrapper
-    return wrapped(*args, **kwargs)
-TypeError: __call__() missing 1 required positional argument: 'tool_input'
+
